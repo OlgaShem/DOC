@@ -7,6 +7,24 @@
     }
 }
 
+@media screen and (max-width: 1370px) {
+    .card-block {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .card {
+        &__wrap {
+            max-width: 270px;
+        }
+        &__text {
+            top: 10%;
+            left: 20%;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .header {
         &__logo {
@@ -16,18 +34,6 @@
     .firstScreen {
         &__text {
             max-width: 80%;
-        }
-    }
-    .card {
-        &-block {
-            max-width: 90%;
-        }
-        &__wrap {
-            max-width: 270px;
-        }
-        &__text {
-            top: 10%;
-            left: 20%;
         }
     }
     .plan {
