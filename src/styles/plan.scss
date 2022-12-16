@@ -1,0 +1,102 @@
+@import "variables.scss";
+
+.plan {
+    background: $grey;
+    border-radius: 30px 0px;
+    color: white;
+    &_popular {
+        position: relative;
+        background: $blue;
+        color: black;
+        &::before {
+            content: "Most popular";
+            position: absolute;
+            top: -37px;
+            right: 0px;
+            padding: 10px 99px 10px;
+            border-radius: 50px 85px 0px 50px;
+            background: $grey;
+            color: $blue;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;    
+        }
+    }
+    &-group {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1035px;
+        margin: 0 auto;
+    }
+    &__btn {
+        width: 84%;
+        padding: 15px 40px 14px;
+        background: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 25px 25px 0px 25px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        &_pink {
+            background: $pink;
+            color: white;
+        }
+        &-block {
+            margin: 33px 0 20px
+        }
+    }
+    &__list {
+        font-family:"Open Sans";
+        padding: 0; 
+        li {
+            position: relative;
+            margin-left: 31px;
+            margin-top: 9px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 26px;
+            &::before {
+                content: url('../../public/img/Subtract.svg');
+                position: absolute;
+                top: 4px;
+                left: -30px;
+                width: 5px;
+                height: 5px;    
+            }
+        }
+        &_black {
+            li {
+                &::before {
+                    content: url('../../public/img/Subtract-black.svg');
+                }
+            }
+        }
+    }
+    &__content {
+        text-align: left;
+        padding: 18px 95px 22px 34px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__text {
+        font-family:"Open Sans";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        margin: 0;
+    }
+}

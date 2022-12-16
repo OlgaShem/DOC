@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+.card {
+    &__wrap {
+        max-width: 355px;
+        width: 100%;
+        border-radius: 0px 20px;
+        z-index: -1;
+        left: 10px;
+        top: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_first {
+            background: $blue;
+            }
+        &_second {
+            background: $yellow
+        }
+        &_third {
+            background: $blue-bright;
+        }
+    }
+    &__img-block {
+        max-width: 100%;
+        position: relative;  
+        top: -10px;
+        left: -10px;
+        
+    }
+    &__img {
+        width: 100%;
+        border-radius: 0px 20px;
+        filter: brightness(40%);
+    }
+    &__text {
+        position: absolute;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        top: 31%;
+        left: 25%;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 36px;
+    }
+}
+.card-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+}
